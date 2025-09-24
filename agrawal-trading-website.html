@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrawal Trading Co. - Innovative Paper Cup Marketing Solutions</title>
+    <meta name="description" content="Transform your marketing with custom-printed paper cups. Reach customers citywide with Agrawal Trading Co.'s innovative branding solutions. Starting at ₹199/month.">
+    <meta name="keywords" content="paper cup marketing, custom printing, branding solutions, marketing materials, Agrawal Trading Co">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Agrawal Trading Co. - Paper Cup Marketing Solutions">
+    <meta property="og:description" content="Revolutionary marketing through custom-printed paper cups. City-wide reach at affordable prices.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://agrawaltrading.com">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #2F4A39;
+            --secondary-color: #F4EFDF;
+            --accent-color: #4A6B5A;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(47, 74, 57, 0.1);
+            --border-radius: 12px;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #ffffff 100%);
+            padding: 120px 0 80px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-text p {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease 0.4s both;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .cta-button:hover {
+            background: transparent;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero-image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            text-align: center;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .about-text p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .video-placeholder {
+            width: 100%;
+            height: 300px;
+            background: var(--secondary-color);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            border: 2px dashed var(--primary-color);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--secondary-color);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(47, 74, 57, 0.15);
+        }
+        
+        .service-card h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Plans Section */
+        .plans {
+            padding: 100px 0;
+            background: var(--secondary-color);
+        }
+        
+        .plans h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+        }
+        
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .plan-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(47, 74, 57, 0.2);
+        }
+        
+        .plan-card.featured {
+            border: 3px solid var(--primary-color);
+            transform: scale(1.05);
+        }
+        
+        .plan-card.featured::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-period {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .plan-description {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .plan-features li {
+            padding: 0.5rem 0;
+            color: var(--text-dark);
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .plan-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .select-plan-btn {
+            width: 100%;
+            padding: 12px 24px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .select-plan-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        
+        /* Calculator Section */
+        .calculator {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        
+        .calculator h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+        }
+        
+        .calculator-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--secondary-color);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .calc-input-group {
+            margin-bottom: 2rem;
+        }
+        
+        .calc-input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .calc-input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .calc-input-group input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(47, 74, 57, 0.1);
+        }
+        
+        .calculate-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .calculate-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        
+        .calc-results {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+            border: 2px solid var(--primary-color);
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .modal-content {
+            background-color: var(--white);
+            margin: 5% auto;
+            padding: 0;
+            border-radius: var(--border-radius);
+            width: 90%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideInUp 0.3s ease;
+        }
+        
+        .modal-header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .close {
+            color: var(--white);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .close:hover {
+            color: var(--secondary-color);
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(47, 74, 57, 0.1);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        
+        /* Analytics Dashboard Modal */
+        .analytics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .analytics-card {
+            background: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .analytics-card h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .analytics-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .savings-highlight {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--white);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: var(--shadow);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu {
+                display: flex;
+            }
+            
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .plans-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .plan-card.featured {
+                transform: none;
+            }
+            
+            .modal-content {
+                width: 95%;
+                margin: 2% auto;
+            }
+            
+            .analytics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">Agrawal Trading Co.</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Revolutionary Paper Cup Marketing</h1>
+                    <p>Transform your brand visibility with custom-printed paper cups. Reach thousands of customers daily through our innovative marketing solution.</p>
+                    <a href="#plans" class="cta-button">Get Started Today</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-placeholder">
+                        🥤 Custom Branded Cups<br>
+                        📈 City-Wide Marketing<br>
+                        💼 Professional Service
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content fade-in-up">
+                <div class="about-text">
+                    <h2>About Our Service</h2>
+                    <p>At Agrawal Trading Co., we've revolutionized traditional marketing by leveraging our established supply chain business in paper cups and disposable items. Our innovative approach combines product distribution with strategic brand placement.</p>
+                    <p>With years of experience in the supply chain industry, we understand the daily consumption patterns of paper cups across various establishments. Now, we're offering businesses the opportunity to turn every cup into a marketing touchpoint.</p>
+                    <p>Our service ensures your brand reaches potential customers at the perfect moment – when they're taking a break, enjoying their favorite beverage, and most receptive to new information.</p>
+                </div>
+                <div class="video-placeholder">
+                    📹 Professional Service Overview Video<br>
+                    (Custom printing process & distribution network)
+                </div>
+            </div>
+            
+            <div class="services-grid fade-in-up">
+                <div class="service-card">
+                    <h3>🎨 Custom Design & Printing</h3>
+                    <p>Professional logo printing, QR codes, and custom messaging tailored to your brand requirements with high-quality printing standards.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🌍 Wide Distribution Network</h3>
+                    <p>Leverage our established supply chain to distribute your branded cups across cafes, offices, restaurants, and events throughout the city.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📊 Performance Tracking</h3>
+                    <p>Comprehensive reporting and analytics to track your marketing campaign performance and measure customer engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2 class="fade-in-up">Choose Your Marketing Plan</h2>
+            <div class="plans-grid fade-in-up">
+                <div class="plan-card" data-plan="Standard">
+                    <div class="plan-name">Standard Plan</div>
+                    <div class="plan-price">₹199</div>
+                    <div class="plan-period">per month</div>
+                    <div class="plan-description">Perfect for small businesses looking for simple branding.</div>
+                    <ul class="plan-features">
+                        <li>Basic logo printing</li>
+                        <li>Whole city coverage</li>
+                        <li>Monthly reporting</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="select-plan-btn" onclick="selectPlan('Standard', '199')">Select Plan</button>
+                </div>
+                
+                <div class="plan-card featured" data-plan="Premium">
+                    <div class="plan-name">Premium Plan</div>
+                    <div class="plan-price">₹349</div>
+                    <div class="plan-period">per month</div>
+                    <div class="plan-description">Advanced branding with QR code and personalized link.</div>
+                    <ul class="plan-features">
+                        <li>Logo + QR code</li>
+                        <li>Region selection</li>
+                        <li>Personalized web link</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="select-plan-btn" onclick="selectPlan('Premium', '349')">Select Plan</button>
+                </div>
+                
+                <div class="plan-card" data-plan="Custom">
+                    <div class="plan-name">Custom Plan</div>
+                    <div class="plan-price">₹499</div>
+                    <div class="plan-period">per month</div>
+                    <div class="plan-description">Tailored plan for targeted customers and analytics.</div>
+                    <ul class="plan-features">
+                        <li>Logo + Custom Link</li>
+                        <li>Targeted regional reach</li>
+                        <li>Analytics dashboard</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                    <button class="select-plan-btn" onclick="selectPlan('Custom', '499')">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <h2 class="fade-in-up">Cost Calculator</h2>
+            <div class="calculator-container fade-in-up">
+                <div class="calc-input-group">
+                    <label for="qtyInput">Number of Cups Required:</label>
+                    <input type="number" id="qtyInput" placeholder="Enter quantity (e.g., 1000)" min="1">
+                </div>
+                <button class="calculate-btn" onclick="calculateCosts()">Calculate Costs</button>
+                <div id="calcResults" class="calc-results" style="display: none;">
+                    <h3>Cost Breakdown:</h3>
+                    <div id="costBreakdown"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Selection Modal -->
+    <div id="planModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalPlanTitle">Plan Selection</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="planForm">
+                    <div class="form-group">
+                        <label for="customerName">Full Name:</label>
+                        <input type="text" id="customerName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="businessName">Business Name:</label>
+                        <input type="text" id="businessName" name="business" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Your City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="marketCity">City to Market:</label>
+                        <input type="text" id="marketCity" name="marketCity" required>
+                    </div>
+                    <input type="hidden" id="selectedPlan" name="plan">
+                    <input type="hidden" id="selectedPrice" name="price">
+                    <button type="submit" class="submit-btn">Submit & Contact Us</button>
+                </form>
+                <div style="margin-top: 1rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
+                    <p>Don't have WhatsApp? Contact us at: <strong>info@agrawaltrading.com</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Modal -->
+    <div id="analyticsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Cost Analysis Dashboard</h2>
+                <span class="close" onclick="closeAnalyticsModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="analytics-grid" id="analyticsGrid">
+                    <!-- Analytics cards will be populated here -->
+                </div>
+                <div class="savings-highlight" id="savingsHighlight">
+                    <!-- Savings highlight will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Agrawal Trading Co.</h3>
+                    <p>Revolutionizing marketing through innovative paper cup branding solutions. Established supply chain expertise with modern marketing approach.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <p>Custom Logo Printing</p>
+                    <p>QR Code Integration</p>
+                    <p>City-wide Distribution</p>
+                    <p>Analytics & Reporting</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 info@agrawaltrading.com</p>
+                    <p>📱 +91 9876543210</p>
+                    <p>🏢 Mumbai, Maharashtra</p>
+                    <p>🌐 www.agrawaltrading.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Agrawal Trading Co. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            if (scrollTop > 50) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'var(--white)';
+                header.style.backdropFilter = 'none';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Plan Selection
+        let selectedPlanData = {};
+
+        function selectPlan(planName, price) {
+            selectedPlanData = { name: planName, price: price };
+            document.getElementById('modalPlanTitle').textContent = `${planName} Plan - ₹${price}/month`;
+            document.getElementById('selectedPlan').value = planName;
+            document.getElementById('selectedPrice').value = price;
+            document.getElementById('planModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('planModal').style.display = 'none';
+        }
+
+        // Form submission
+        document.getElementById('planForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            const message = `Hi! I'm interested in the ${data.plan} Plan (₹${data.price}/month).
+
+My Details:
+• Name: ${data.name}
+• Business: ${data.business}
+• Phone: ${data.phone}
+• City: ${data.city}
+• Target Market: ${data.marketCity}
+
+Please contact me to discuss the next steps.`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappNumber = "919876543210"; // Replace with actual number
+            
+            // Check if on mobile device
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                window.open(`whatsapp://send?phone=${whatsappNumber}&text=${encodedMessage}`, '_blank');
+            } else {
+                window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+            }
+            
+            closeModal();
+            
+            // Show success message
+            alert('Thank you for your interest! We\'ll contact you soon via WhatsApp.');
+        });
+
+        // Calculator functionality
+        function calculateCosts() {
+            const qtyInput = document.getElementById('qtyInput');
+            const qty = parseInt(qtyInput.value);
+            
+            if (!qty || qty <= 0) {
+                alert('Please enter a valid quantity');
+                return;
+            }
+            
+            const base = 0.17;
+            const print = 0.07;
+            
+            const standardCost = qty * (base + print * 0.5);
+            const premiumCost = qty * (base + print);
+            const customCost = qty * (base + print + 0.02);
+            
+            // Traditional marketing costs (estimated)
+            const traditionalPrintAds = qty * 0.50; // Flyers/brochures
+            const traditionalDigitalAds = qty * 0.35; // Digital advertising per impression
+            const traditionalOutdoor = qty * 0.80; // Billboard/poster equivalent
+            
+            document.getElementById('calcResults').style.display = 'block';
+            document.getElementById('costBreakdown').innerHTML = `
+                <div style="margin-bottom: 1rem;">
+                    <strong>Our Pricing:</strong><br>
+                    Standard Plan: ₹${standardCost.toFixed(2)}<br>
+                    Premium Plan: ₹${premiumCost.toFixed(2)}<br>
+                    Custom Plan: ₹${customCost.toFixed(2)}
+                </div>
+                <button onclick="showAnalytics(${qty}, ${standardCost}, ${premiumCost}, ${customCost}, ${traditionalPrintAds}, ${traditionalDigitalAds}, ${traditionalOutdoor})" 
+                        style="padding: 10px 20px; background: var(--primary-color); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                    View Detailed Analysis
+                </button>
+            `;
+        }
+
+        // Analytics Dashboard
+        function showAnalytics(qty, standard, premium, custom, tradPrint, tradDigital, tradOutdoor) {
+            const avgTraditional = (tradPrint + tradDigital + tradOutdoor) / 3;
+            const avgOurCost = (standard + premium + custom) / 3;
+            const savings = avgTraditional - avgOurCost;
+            const savingsPercentage = ((savings / avgTraditional) * 100).toFixed(1);
+            
+            const reach = qty * 2.3; // Estimated reach multiplier
+            const impressions = qty * 4.5; // Multiple views per cup
+            const costPerImpression = (avgOurCost / impressions).toFixed(4);
+            const traditionalCostPerImpression = (avgTraditional / impressions).toFixed(4);
+            
+            document.getElementById('analyticsGrid').innerHTML = `
+                <div class="analytics-card">
+                    <h3>Total Cups</h3>
+                    <div class="analytics-value">${qty.toLocaleString()}</div>
+                    <p>Units to be distributed</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Estimated Reach</h3>
+                    <div class="analytics-value">${reach.toLocaleString()}</div>
+                    <p>People reached</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Total Impressions</h3>
+                    <div class="analytics-value">${impressions.toLocaleString()}</div>
+                    <p>Brand exposures</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Our Average Cost</h3>
+                    <div class="analytics-value">₹${avgOurCost.toFixed(0)}</div>
+                    <p>Across all plans</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Traditional Marketing</h3>
+                    <div class="analytics-value">₹${avgTraditional.toFixed(0)}</div>
+                    <p>Average competitor cost</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Cost per Impression</h3>
+                    <div class="analytics-value">₹${costPerImpression}</div>
+                    <p>Our efficiency rate</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Traditional Cost/Impression</h3>
+                    <div class="analytics-value">₹${traditionalCostPerImpression}</div>
+                    <p>Industry standard</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Engagement Rate</h3>
+                    <div class="analytics-value">23%</div>
+                    <p>Higher than digital ads</p>
+                </div>
+            `;
+            
+            document.getElementById('savingsHighlight').innerHTML = `
+                <h2>💰 You Save ${savingsPercentage}%</h2>
+                <div style="font-size: 2.5rem; font-weight: 800; margin: 1rem 0;">
+                    ₹${savings.toFixed(0)} Total Savings
+                </div>
+                <p style="font-size: 1.1rem;">
+                    Compared to traditional marketing methods, our paper cup marketing delivers better engagement 
+                    at a fraction of the cost. Your message reaches customers during their most relaxed moments.
+                </p>
+                <div style="margin-top: 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: left;">
+                    <div>
+                        <strong>✅ Our Advantages:</strong><br>
+                        • Higher engagement rate<br>
+                        • Tangible brand interaction<br>
+                        • Extended exposure time<br>
+                        • Cost-effective distribution
+                    </div>
+                    <div>
+                        <strong>❌ Traditional Marketing:</strong><br>
+                        • Higher cost per impression<br>
+                        • Limited engagement time<br>
+                        • Easy to ignore/skip<br>
+                        • Less memorable impact
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('analyticsModal').style.display = 'block';
+        }
+
+        function closeAnalyticsModal() {
+            document.getElementById('analyticsModal').style.display = 'none';
+        }
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            const planModal = document.getElementById('planModal');
+            const analyticsModal = document.getElementById('analyticsModal');
+            
+            if (event.target === planModal) {
+                closeModal();
+            }
+            if (event.target === analyticsModal) {
+                closeAnalyticsModal();
+            }
+        });
+
+        // Calculator input event listener
+        document.getElementById('qtyInput').addEventListener('input', function() {
+            const qty = parseInt(this.value);
+            if (!isNaN(qty) && qty > 0) {
+                const base = 0.17;
+                const print = 0.07;
+                const standard = qty * (base + print * 0.5);
+                const premium = qty * (base + print);
+                const custom = qty * (base + print + 0.02);
+                
+                // Show quick preview
+                const resultsDiv = document.getElementById('calcResults');
+                resultsDiv.style.display = 'block';
+                document.getElementById('costBreakdown').innerHTML = `
+                    <div style="margin-bottom: 1rem;">
+                        <strong>Quick Preview:</strong><br>
+                        Standard: ₹${standard.toFixed(2)} | Premium: ₹${premium.toFixed(2)} | Custom: ₹${custom.toFixed(2)}
+                    </div>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">Click "Calculate Costs" for detailed analysis</p>
+                `;
+            }
+        });
+
+        // Add some interactive hover effects for plan cards
+        document.querySelectorAll('.plan-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                if (this.classList.contains('featured')) {
+                    this.style.transform = 'translateY(-10px) scale(1.05)';
+                } else {
+                    this.style.transform = 'translateY(0) scale(1)';
+                }
+            });
+        });
+
+        // Add loading animation for form submission
+        document.getElementById('planForm').addEventListener('submit', function() {
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Opening WhatsApp...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 3000);
+        });
+
+        // Add keyboard navigation for accessibility
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeAnalyticsModal();
+            }
+        });
+
+        // Initialize animations on page load
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('visible');
+                    }, index * 100);
+                });
+            }, 200);
+        });
+    </script>
+</body>
+</html>
